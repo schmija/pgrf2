@@ -1,4 +1,4 @@
-package ImageData;
+package imageData;
 
 public interface Image<T> {
     int getWidth();

@@ -1,4 +1,4 @@
-package ImageData;
+package imageData;
 
 public class DepthBuffer implements Image<Float>{
 
