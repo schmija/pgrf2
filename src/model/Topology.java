@@ -1,4 +1,4 @@
-package ImageData.Model;
+package model;
 
 public enum Topology {
     Points,

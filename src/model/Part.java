@@ -1,4 +1,4 @@
-package ImageData.Model;
+package model;
 
 public class Part {
 
@@ -10,5 +10,17 @@ public class Part {
         this.topology = topology;
         this.start = start;
         this.count = count;
+    }
+
+    public Topology getTopology() {
+        return topology;
+    }
+
+    public int getStart() {
+        return start;
+    }
+
+    public int getCount() {
+        return count;
     }
 }
