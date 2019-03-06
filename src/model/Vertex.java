@@ -23,4 +23,8 @@ public class Vertex {
     public Vertex add(Point3D p){
         return new Vertex(positon.add(p));
     }
+
+    public Vertex dehomog(){
+        return this.mul(1/positon.getW());
+    }
 }

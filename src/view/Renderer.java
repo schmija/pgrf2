@@ -8,6 +8,10 @@ public class Renderer {
 
     RasterizerTriangle rt;
 
+    public Renderer(RasterizerTriangle rt) {
+        this.rt = rt;
+    }
+
     public void render(Solid solid){
         for (Part part : solid.getPartBuffer()) {
             switch (part.getTopology()){
@@ -68,18 +72,18 @@ public class Renderer {
         }
 
         if (b.getPosition().getZ() < 0){
-            double t;
-            Vertex ab = b.mul(1-t).add(a.mul(t));
-            Vertex ac = c.mul(1-t).add(a.mul(t));
+//            double t;
+//            Vertex ab = b.mul(1-t).add(a.mul(t));
+//            Vertex ac = c.mul(1-t).add(a.mul(t));
 
-            rt.rasterize(a, ab, ac);
+//            rt.rasterize(a, ab, ac);
             return;
         }
         if (c.getPosition().getZ() < 0){
 
-            rt.rasterize(a, b, bc);
-            rt.rasterize(a, ac, bc);
-            return;
+//            rt.rasterize(a, b, bc);
+//            rt.rasterize(a, ac, bc);
+//            return;
         }
 
         rt.rasterize(a,b,c);
